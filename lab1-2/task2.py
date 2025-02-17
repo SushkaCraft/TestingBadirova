@@ -1,7 +1,7 @@
 import math
 
 def is_valid(a, b, c):
-    return a > 0 and b > 0 and c > 0 and (a + b > c) and (a + c > b) and (b + c > a)
+    return (a > 0 and b > 0 and c > 0) and (a + b > c) and (a + c > b) and (b + c > a)
 
 def triangle_type(a, b, c):
     if a**2 + b**2 > c**2 and b**2 + c**2 > a**2 and c**2 + a**2 > b**2:
